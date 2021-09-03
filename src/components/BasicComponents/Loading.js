@@ -37,7 +37,7 @@ class Loading extends Component {
               </div>
             </Fragment>
           )
-        } else if(window.location.href.includes("https://kapable.github.io/")) {
+        } else if(window.location.href.includes("https://seoboseok.github.io/")) {
           return(
             <Fragment>
               <ins className="kakao_ad_area" style={{display:"none"}}

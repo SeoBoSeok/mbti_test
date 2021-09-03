@@ -83,7 +83,7 @@ class Result extends Component {
               <ScriptTag type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></ScriptTag>
             </Fragment>
           )
-        } else if(this.state.sharable_url.includes("https://kapable.github.io/")) {
+        } else if(this.state.sharable_url.includes("https://seoboseok.github.io/")) {
           return(
             <Fragment>
               <ins className="kakao_ad_area" style={{display:"none"}}
@@ -281,7 +281,7 @@ class Result extends Component {
 
         const current_tests_path = '/' + this.state.current_test + '/';
         return(
-            <Router basename='/kapable.github.io/'>
+            <Router basename='/seoboseok.github.io/'>
                 <Switch>
                     <Route path={current_tests_path} component={()=><Intro test={this.state.current_test}/>} exact/>
                     <Redirect to={current_tests_path} />

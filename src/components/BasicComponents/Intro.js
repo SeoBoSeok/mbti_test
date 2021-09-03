@@ -137,7 +137,7 @@ class Intro extends Component {
                 <ScriptTag type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></ScriptTag>
             </Fragment>
         )
-        } else if(this.state.quiz_url.includes("https://kapable.github.io/")) {
+        } else if(this.state.quiz_url.includes("https://kaseoboseok.github.io/")) {
         return(
             <Fragment>
             <ins className="kakao_ad_area" style={{display:"none"}}
@@ -508,21 +508,21 @@ class Intro extends Component {
         let final_score_query = result_contents.query // <----------------query export
         if (this.state.current_test.info.mainUrl === "dogSounds" || this.state.current_test.info.mainUrl === "dogSoundsEng") {
             return(
-                <Router basename={'/kapable.github.io/'+ this.state.current_test.info.mainUrl}>
+                <Router basename={'/seoboseok.github.io/'+ this.state.current_test.info.mainUrl}>
                     <Route path={this.state.result_url+final_score_query + '/'} component={() => <Result dog_name={this.state.custom_name}/>}/>
                     <Redirect to={this.state.result_url+final_score_query + '/'} />
                 </Router>
             )
         } else if(this.state.current_test.info.mainUrl === "facialExpressionAnalyzer" || this.state.current_test.info.mainUrl === "facialExpressionAnalyzerEng" || this.state.current_test.info.mainUrl === "facialExpressionAnalyzerCN") {
             return(
-                <Router basename={'/kapable.github.io/'+ this.state.current_test.info.mainUrl}>
+                <Router basename={'/seoboseok.github.io/'+ this.state.current_test.info.mainUrl}>
                     <Route path={this.state.result_url+final_score_query + '/'} component={() => <Result pics={this.state.custom_name} ment={result_contents.comment}/>}/>
                     <Redirect to={this.state.result_url+final_score_query + '/'} />
                 </Router>
             )
         } else {
             return(
-                <Router basename={'/kapable.github.io/'+ this.state.current_test.info.mainUrl}>
+                <Router basename={'/seoboseok.github.io/'+ this.state.current_test.info.mainUrl}>
                     <Route path={this.state.result_url+final_score_query + '/'} component={Result}/>
                     <Redirect to={this.state.result_url+final_score_query + '/'} />
                 </Router>
