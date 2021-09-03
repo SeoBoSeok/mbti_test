@@ -1,7 +1,7 @@
 {
   "name": "personality-test",
   "version": "1.1.1",
-  "homepage": "http://kapable.github.io/",
+  "homepage": "https://github.com/SeoBoSeok/mbti_test/",
   "private": true,
   "dependencies": {
     "@ramonak/react-progress-bar": "^3.1.0",
